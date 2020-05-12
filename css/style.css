@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url('../img/fundo.jpg');
+    background-size: 100vw 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 100vh;
+    font-size: 10px;
+ }
+
+ @media (min-width: 400px) {/* se a tela tiver pelo menos 400px, funciona como o IF*/
+    body{
+        font-size: 14px;
+    }
+ }
+
+  header {
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+ }
+
+  .menu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .menu ul{
+    display: flex; /*flex força elementos a virarem colunas*/
+    justify-content: space-around; /*justify so funciona em conjunto com display*/
+  }
+  .menu li{
+    list-style: none;
+  }
+  
+  a{
+    color: teal;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  } 
+  
+  .site-title{
+    font-size: 4em;
+  }
+  .site-subtitle{
+    font-style: italic;
+  }
+  
+  .img-portfolio{
+      height: 180px;
+      width: 180px;
+  }
